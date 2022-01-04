@@ -1,4 +1,5 @@
 ﻿using SolidPrinciples.ISP.BadSample;
+using SolidPrinciples.LSP.BestSample;
 using SolidPrinciples.OCP.BestSample;
 using SolidPrinciples.SRP.BestSample;
 using System;
@@ -54,7 +55,7 @@ namespace SolidPrinciples
             // hexadecimal formatına çevrilmiş şifrelenmiş parola
             string password = hash.GetHexdecimalString(passwordByte);
 
-             
+
 
 
 
@@ -68,6 +69,21 @@ namespace SolidPrinciples
             //string decrypted = Decrypt(encrypted, aes.Key, aes.IV);
             //// Print decrypted string. It should be same as raw data    
             //Console.WriteLine($"Decrypted data: {decrypted}");
+
+
+
+            BestCubeShape b = new BestCubeShape();
+            b.Size = 3;
+            b.GetArea();
+            b.GetVolume();
+            b.GetPerimeter();
+
+            BestRectancleShape r = new BestRectancleShape();
+            r.Height = 5;
+            r.Width = 3;
+            r.GetArea();
+            r.GetPerimeter();
+
 
 
 
